@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1762664855345,
+    "plan": "weekly",
+    "price": 499,
+    "discount": 20,
+    "createdAt": "2025-11-09T05:07:35.345Z"
+  },
+  {
+    "id": 1762666532518,
+    "plan": "yearly",
+    "price": 4999,
+    "discount": 35,
+    "createdAt": "2025-11-09T05:35:32.518Z"
+  },
+  {
+    "id": 1762667094771,
+    "plan": "weekly",
+    "price": 499,
+    "discount": 20,
+    "createdAt": "2025-11-09T05:44:54.771Z"
+  }
+]

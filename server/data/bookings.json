@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1762667112745,
+    "pooja": "Sarasvati Pooja",
+    "name": "vishal",
+    "phone": "2093890390",
+    "date": "2025-11-11",
+    "samagri": [
+      4
+    ],
+    "plan": {
+      "plan": "weekly",
+      "price": 499,
+      "discount": 20
+    }
+  }
+]
