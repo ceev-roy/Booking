@@ -3,7 +3,7 @@ import cors from "cors";
 import fs from "fs";
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(express.json());
@@ -50,4 +50,5 @@ app.post("/api/subscribe", (req, res) => {
 app.get("/api/subscriptions", (req, res) => res.json(readData(subscriptionsFile)));
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+
 
