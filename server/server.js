@@ -17,6 +17,10 @@ if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir);
 const readData = (path) => (fs.existsSync(path) ? JSON.parse(fs.readFileSync(path)) : []);
 const writeData = (path, data) => fs.writeFileSync(path, JSON.stringify(data, null, 2));
 
+app.get("/", (req, res) => {
+  res.send("Booking backend is running");
+});
+
 // Get all bookings
 app.get("/api/bookings", (req, res) => res.json(readData(bookingsFile)));
 
@@ -46,3 +50,4 @@ app.post("/api/subscribe", (req, res) => {
 app.get("/api/subscriptions", (req, res) => res.json(readData(subscriptionsFile)));
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+
