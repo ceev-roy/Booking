@@ -10,7 +10,7 @@ export default function Confirmation() {
 
   useEffect(() => {
     // Fetching booking details
-    fetch(`http://localhost:4000/api/bookings`)
+    fetch(`${import.meta.env.VITE_API_URL}/api/bookings`)
       .then((res) => res.json())
       .then((data) => {
         const found = data.find((b) => b.id == id);
@@ -69,4 +69,5 @@ export default function Confirmation() {
     </div>
   );
 }
+
 
