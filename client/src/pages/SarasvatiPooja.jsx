@@ -58,7 +58,7 @@ export default function SarasvatiPooja() {
       plan: selectedPlan,
     };
 
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/book`, {
+    const res = await fetch("http://localhost:4000/api/book", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -242,3 +242,4 @@ export default function SarasvatiPooja() {
     </div>
   );
 }
+
